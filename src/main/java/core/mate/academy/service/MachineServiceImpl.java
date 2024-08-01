@@ -15,9 +15,11 @@ public class MachineServiceImpl<T extends Machine> implements MachineService<T> 
         List<T> truck = (List<T>) new TruckProducer().get();
         if (type.equals(Bulldozer.class)) {
             return bulldozer;
-        } else if (type.equals(Excavator.class)) {
+        }
+        if (type.equals(Excavator.class)) {
             return excavator;
-        } else if (type.equals(Truck.class)) {
+        }
+        if (type.equals(Truck.class)) {
             return truck;
         }
         return new ArrayList<>();
