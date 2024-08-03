@@ -3,7 +3,8 @@ package core.mate.academy.model;
 public class Excavator extends Machine {
     private int dippingDepth;
 
-    public Excavator(int dippingDepth) {
+    public Excavator(String name, String color, int dippingDepth) {
+        super(name, color);
         this.dippingDepth = dippingDepth;
     }
 

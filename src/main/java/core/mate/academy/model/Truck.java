@@ -3,7 +3,8 @@ package core.mate.academy.model;
 public class Truck extends Machine {
     private int curbWeight;
 
-    public Truck(int curbWeight) {
+    public Truck(String name, String color, int curbWeight) {
+        super(name, color);
         this.curbWeight = curbWeight;
     }
 
